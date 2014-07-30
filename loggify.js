@@ -57,7 +57,7 @@ $(function(window, originalConsole, document, $, undefined) {
         }
         $('#loggify-log-container tbody').append(templates.logEntry.format(type, new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1"), message, ''));
         $('#loggify-log-container').stop(true).animate({ scrollTop: $('#loggify-log-container').prop('scrollHeight') }, 100);
-    };
+    }
 
     window.console.log = function(message) {
         log(message, 'info');
@@ -92,7 +92,6 @@ $(function(window, originalConsole, document, $, undefined) {
     //_________________________________________________________________________________________________
     $window.on('resize', function() {
         updateDimensions();
-        window.console.log('Browser Resized');
     });
     //_________________________________________________________________________________________________
 
