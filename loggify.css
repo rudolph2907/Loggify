@@ -1,0 +1,120 @@
+#loggify-navicon {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  background-color: #437FAD;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  lineheight: 30px;
+  color: #fff;
+  z-index: 99999999999;
+}
+#loggify-navicon:focus {
+  outline: none;
+}
+#loggify-navicon::-moz-focus-inner {
+  border: 0;
+}
+#loggify-navicon:hover,
+#loggify-navicon:focus {
+  text-decoration: none;
+  outline: 0 none;
+}
+#loggify-navicon.expanded {
+  background-color: #225176;
+}
+#loggify-navicon.collapsed {
+  background-color: #437FAD;
+}
+#loggify-container {
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  z-index: 9999;
+  color: #fff;
+  font-size: 16px;
+  top: 0;
+  left: -25%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  resize: horizontal;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.6);
+}
+#loggify-container :focus {
+  outline: none;
+}
+#loggify-container ::-moz-focus-inner {
+  border: 0;
+}
+#loggify-container a {
+  text-decoration: none;
+}
+#loggify-container a:hover,
+#loggify-container a:focus {
+  text-decoration: none;
+  outline: 0 none;
+}
+#loggify-container #loggify-info {
+  height: 30px;
+  background-color: #437FAD;
+  text-align: right;
+  line-height: 30px;
+  padding-right: 10px;
+}
+#loggify-container #loggify-dimensions-container {
+  height: 30px;
+  line-height: 30px;
+  background-color: #225176;
+}
+#loggify-container #loggify-dimensions-container #loggify-dimensions {
+  text-align: right;
+  padding-right: 10px;
+}
+#loggify-container #loggify-log-container {
+  border-top: 1px solid #ccc;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+#loggify-container #loggify-log-container #loggify-log-clear {
+  padding-right: 10px;
+  display: block;
+  float: right;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+}
+#loggify-container #loggify-log-container table {
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+}
+#loggify-container #loggify-log-container table thead th {
+  vertical-align: top;
+}
+#loggify-container #loggify-log-container table thead th.loggify-time {
+  width: 20%;
+}
+#loggify-container #loggify-log-container table thead th.loggify-message {
+  width: 60%;
+}
+#loggify-container #loggify-log-container table thead th.loggify-info {
+  width: 20%;
+}
+#loggify-container #loggify-log-container table tbody tr.warn {
+  color: orange;
+}
+#loggify-container #loggify-log-container table tbody tr.error {
+  color: red;
+}
+#loggify-container #loggify-log-container table tbody tr:nth-child(even) {
+  background-color: #4C4C4C;
+}
+#loggify-container #loggify-log-container table tbody td {
+  vertical-align: top;
+  padding: 3px 5px;
+}
